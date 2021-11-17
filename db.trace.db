@@ -1,0 +1,24 @@
+2021-11-17 10:23:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE ORDER[*] (ID INTEGER NOT NULL, AMOUNT INTEGER NOT NULL, CREATEDON TIMESTAMP, CURRENTSTATUS INTEGER, DELIVERYDATE TIMESTAMP, CUSTOMER_ID BIGINT, PRIMARY KEY (ID)) "; expected "identifier"; SQL statement:
+create table Order (id integer not null, amount integer not null, createdOn timestamp, currentStatus integer, deliveryDate timestamp, customer_id bigint, primary key (id)) [42001-196]
+2021-11-17 10:23:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER TABLE ORDER[*] ADD CONSTRAINT FKJD3X2XGS94MMSPKEAD2WPJHGS FOREIGN KEY (CUSTOMER_ID) REFERENCES CUSTOMER "; expected "identifier"; SQL statement:
+alter table Order add constraint FKjd3x2xgs94mmspkead2wpjhgs foreign key (customer_id) references Customer [42001-196]
+2021-11-17 10:23:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER TABLE ORDER_ARTICLE ADD CONSTRAINT FK8N3W8962V13MJ1NYU84VCNO5I FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*] "; expected "identifier"; SQL statement:
+alter table Order_Article add constraint FK8n3w8962v13mj1nyu84vcno5i foreign key (Order_id) references Order [42001-196]
+2021-11-17 10:23:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER TABLE ORDER_STATUSHISTORY ADD CONSTRAINT FKBFO8FNNJ82KYVGBFTO0IHIA7I FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*] "; expected "identifier"; SQL statement:
+alter table Order_StatusHistory add constraint FKbfo8fnnj82kyvgbfto0ihia7i foreign key (Order_id) references Order [42001-196]
+2021-11-17 14:58:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE ORDER[*] (ID INTEGER NOT NULL, AMOUNT INTEGER NOT NULL, CREATEDON TIMESTAMP, CURRENTSTATUS INTEGER, DELIVERYDATE TIMESTAMP, CUSTOMER_ID BIGINT, PRIMARY KEY (ID)) "; expected "identifier"; SQL statement:
+create table Order (id integer not null, amount integer not null, createdOn timestamp, currentStatus integer, deliveryDate timestamp, customer_id bigint, primary key (id)) [42001-196]
+2021-11-17 14:58:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER TABLE ORDER[*] ADD CONSTRAINT FKJD3X2XGS94MMSPKEAD2WPJHGS FOREIGN KEY (CUSTOMER_ID) REFERENCES CUSTOMER "; expected "identifier"; SQL statement:
+alter table Order add constraint FKjd3x2xgs94mmspkead2wpjhgs foreign key (customer_id) references Customer [42001-196]
+2021-11-17 14:58:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER TABLE ORDER_ARTICLE ADD CONSTRAINT FK8N3W8962V13MJ1NYU84VCNO5I FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*] "; expected "identifier"; SQL statement:
+alter table Order_Article add constraint FK8n3w8962v13mj1nyu84vcno5i foreign key (Order_id) references Order [42001-196]
+2021-11-17 14:58:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER TABLE ORDER_STATUSHISTORY ADD CONSTRAINT FKBFO8FNNJ82KYVGBFTO0IHIA7I FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*] "; expected "identifier"; SQL statement:
+alter table Order_StatusHistory add constraint FKbfo8fnnj82kyvgbfto0ihia7i foreign key (Order_id) references Order [42001-196]
